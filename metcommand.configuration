@@ -1,0 +1,5 @@
+MetCommand.pl=applyChangeList
+MetCommand.pl=createChangeList
+MetCommand.pl=getOrsMetadata
+MetCommand.pl=validateChangeList
+MetCommand.pl=validateMetadata
