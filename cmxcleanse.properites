@@ -1,0 +1,57 @@
+# Siperian MRM Cleanse properties
+#
+cmx.server.datalayer.cleanse.working_files.location=/export/appl/bk1acpt/mdm/infamdm/hub/cleanse/tmp
+cmx.server.datalayer.cleanse.working_files=KEEP
+cmx.server.datalayer.cleanse.execution=LOCAL
+
+# Server settings
+# Installation directory
+cmx.home=/export/appl/bk1acpt/mdm/infamdm/hub/cleanse
+# Application server type: jboss, tomcat, websphere or weblogic
+cmx.appserver.type=jboss
+cmx.appserver.version=7
+
+# default setting: 8880 for websphere only (this is not being used in jboss and weblogic
+cmx.appserver.soap.connector.port=
+cmx.websphere.security.enabled=
+
+# Match Properties
+cmx.server.match.server_encoding=0
+
+# limit memory usage by managing the number of records per match ranger node
+cmx.server.match.max_records_per_ranger_node=3000
+
+# Cleanse Properties
+
+### For Initial Data Load Only
+sequence.manager.read.block.size=1000000
+
+# Address Doctor Properties 
+cleanse.library.addressDoctor.property.SetConfigFile=/export/appl/bk1acpt/mdm/infamdm/hub/AddressDoctor5/SetConfig.xml
+cleanse.library.addressDoctor.property.ParametersFile=/export/appl/bk1acpt/mdm/infamdm/hub/AddressDoctor5/Parameters.xml
+cleanse.library.addressDoctor.property.DefaultCorrectionType=PARAMETERS_DEFAULT
+
+# Trillium Director Properties
+cleanse.library.trilliumDir.property.config.file.1=
+cleanse.library.trilliumDir.property.config.file.2=
+cleanse.library.trilliumDir.property.config.file.3=
+
+# Trillium Director 11+ Properties
+cleanse.library.trilliumDir11.property.config.file.1=
+cleanse.library.trilliumDir11.property.config.file.2=
+cleanse.library.trilliumDir11.property.config.file.3=
+
+# Group1Software Enterprise Server Properties
+cleanse.library.group1EntServer.property.config.file=
+
+# Group1Software CDQ Server Properties
+cleanse.library.group1CDQ.property.config.file=
+
+#FirstLogicDirect Properties
+cleanse.library.firstLogicDirect.property.config.file=
+
+cmx.server.match.distributed_match=1
+
+com.informatica.mdm.batchserver.RecyclerThread.max_idling=86400000
+
+com.informatica.mdm.loadbalance.ControllerThread.timeout=5400000
